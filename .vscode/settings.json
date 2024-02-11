@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "function_to_sort_an_array_in_ ascending_order_and_find_the_sum_of_the_elements_that_are_at_indices_that_are_divisible_by_3_and_print_it_to_the_screen_if_the_debug_mac": "c",
-        "macro_called_array_size_containing_array_size_declare_an_array_of_size_array_size_only_if_the_array_size_macro_is_defined_array_elements_must_be_consecutive_powers_of": "c"
-    }
-}
