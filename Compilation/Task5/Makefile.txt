@@ -1,0 +1,12 @@
+main.out:main.c libmath.a
+	gcc main.c -L/home/runner/zad5 -lmath -o main.out
+	./main.out
+
+libmath.a:math.o math.h
+	ar rcs libmath.a math.o
+
+math.o:math.c math.h
+	gcc -c math.c -o math.o
+
+clean:
+	rm -f *.out *.o
