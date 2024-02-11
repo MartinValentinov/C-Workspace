@@ -1,0 +1,11 @@
+all: main.out
+
+main.out: main.c quadraticroots.o quadraticroots.h
+	gcc main.c quadraticroots.o -L/home/runner/CW -lm -o main.out
+	./main.out
+
+quadraticroots.o: quadraticroots.c quadraticroots.h
+	gcc -c quadraticroots.c -o quadraticroots.o
+
+clean:
+	rm -f *.o *.out
