@@ -1,0 +1,5 @@
+The idea is to make a header file "person.h" that declares a structure "Person" that contains information about the person's name, middle name and surname.
+Тhe header file “schoolclass.h” inserts the header file “person.h” and declare a structure “SchoolClass” to contain an array of 26 students, the class class, the class number and the class teacher.
+The header file “schoolroom.h” inserts the header file “person.h” in which a “SchoolRoom” struct is declared to contain the room number and information about which people are currently in that room. 
+In the file, school.c, the header files “schoolclass.h” and “schoolroom.h” are inserted and a structure “School” is made containing school classes and school rooms. 
+In the school.c file, a variable of type school is declared in main.

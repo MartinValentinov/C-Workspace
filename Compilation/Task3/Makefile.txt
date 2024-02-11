@@ -1,0 +1,9 @@
+main.out:main.c transformation.o transformation.h
+	gcc main.c transformation.o -o main.out
+	./main.out
+
+transformation.o:transformation.c transformation.h
+	gcc -c transformation.c -o transformation.o
+
+clean:
+	rm -f *.out *.o

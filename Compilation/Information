@@ -1,0 +1,22 @@
+1. A program in which you define a macro - a function that accepts two arguments (A and B) and finds the result of (A + B) ^ 2. The main function demonstrates it.
+
+2. A program to find the least common multiple of two numbers. Example: a=12, b=18, least common multiple = 36.
+
+3. A structure to call transformation. The structure must consist of two fields - result and error. 
+    The structure must be declared in a separate header file (transformation.h). 
+    The header file must also include the declaration of a function to convert a character string to the corresponding integer.
+    The function must return a value of the transformation struct type. If the character string is a valid integer, 
+    the result of the transformation must be written in the “result” field of the returned result, and the error field must be an empty string (“\0”). 
+    If the input character string is not a valid integer, 0 must be written in the result field of the result, 
+    and a character string describing the error must be written in the “error” field.
+    Example: Input = “-123” => Output: tmp.result = -123, tmp.error = “\0”, Input=”12ab23” => Output: tmp.result = 0, 
+    tmp.error = “Invalid input string”. The source file (transformation.c) inserts the header file and defines the function. 
+    The main.c program uses the function to convert sample strings to numbers.
+
+4. A program that accepts a long array of numbers and replaces each element of it with the value of the element raised to the fourth power. 
+    The pow function takes two arguments the number to raise to a power and the power to raise the number to. So for example 2 ^ 4 = pow(2, 4). 
+    The function is defined in the libm.a library with a math.h header file that is linked to the library at compile time.
+
+5. A maths.h file in which a function is declared to find the factorial of a given number.
+    A maths.c file to implement (define) the function. Program main.c, inserts the header file and demonstrates 
+    the operation of the function. maths.c is a static library and is linked with the library when compiling main.c.
