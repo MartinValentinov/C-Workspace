@@ -1,7 +1,14 @@
 Task 1:
 
-In the file "quadraticroots.h" the structure "QuadraticRootsResult" is declared, which holds the result of finding the roots of a quadratic equation. The structure contains two member variables: x1 and x2 to hold the values ​​of the roots of a given quadratic equation. There is also a “norealroots” flag attached to the structure, which, if it has a value of “1”, means that the equation has no real roots. The "findroots" function takes three parameters (a, b, c) and finds the roots of the quadratic equation (if any) or indicates that the equation has no real roots. The “main.c” file demonstrates the operation of the “findroots” function called with arguments of different types: once with int arguments, once with float arguments, once with double arguments.
+In the file "quadraticroots.h" the structure "QuadraticRootsResult" is declared, which holds the result of finding the roots of a quadratic equation. 
+The structure contains two member variables: x1 and x2 to hold the values ​​of the roots of a given quadratic equation. There is also a “norealroots” flag attached to the structure, 
+which, if it has a value of “1”, means that the equation has no real roots. The "findroots" function takes three parameters (a, b, c) and finds the roots of the quadratic equation 
+(if any) or indicates that the equation has no real roots. The “main.c” file demonstrates the operation of the “findroots” function called with arguments of different types: once 
+with int arguments, once with float arguments, once with double arguments.
 
 Task 2:
 
-The program controls the lighting of a smart house that has eight rooms. The state of the rooms is stored in an 8 bit variable where each bit indicates the state of each room. For example, if bit 0 is set (that is, has a value of 1), it means that the light is on in room 1. The application provides a menu with two options. The first option (“Switch lights”) accepts a room number from the console (a number from 1 to 8) and turns on the lights in a given room if it is off or turns it off if it is on. The second option ("Print state") prints in which rooms the lighting is on. An example of a result from option two is “The light is on in rooms: 1 2 7”, which means that the light is on in rooms 1, 2 and 7.
+The program controls the lighting of a smart house that has eight rooms. The state of the rooms is stored in an 8 bit variable where each bit indicates the state of each room. 
+For example, if bit 0 is set (that is, has a value of 1), it means that the light is on in room 1. The application provides a menu with two options. 
+The first option (“Switch lights”) accepts a room number from the console (a number from 1 to 8) and turns on the lights in a given room if it is off or turns it off if it is on. 
+The second option ("Print state") prints in which rooms the lighting is on. An example of a result from option two is “The light is on in rooms: 1 2 7”, which means that the light is on in rooms 1, 2 and 7.
