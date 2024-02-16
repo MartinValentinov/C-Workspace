@@ -1,0 +1,2 @@
+The strchr function is used to remove the 
+newline from character strings entered using the fgets function.

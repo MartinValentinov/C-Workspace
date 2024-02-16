@@ -1,0 +1,2 @@
+The program inputs two double variables from the user using scanf. Two pointers point to them,
+then the pointer addresses and their values are printed.

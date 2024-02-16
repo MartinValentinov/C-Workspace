@@ -1,0 +1,7 @@
+A function called bubblesort has been made. The function takes an array to sort,
+ the number of elements in the array, a pointer to a function that specifies the
+order in which to sort the array, and a pointer to a function that specifies 
+how to swap two array elements. The swapelements pointer must point to a function that 
+takes two void pointers and returns void. If the swap happens when the first element is 
+greater than the second, then we have an ascending sort. If the swap happens when the first 
+element is less than the second, then we have a descending sort.
