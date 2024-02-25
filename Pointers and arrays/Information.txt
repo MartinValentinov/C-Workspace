@@ -1,0 +1,17 @@
+1. The function finds the length of a character 
+	string using address arithmetic to traverse the array.
+
+2. The function sorts an array using address arithmetic. 
+	A function called swap swaps two variables.
+
+3. The function called strhalf accepts a character string and 
+	a double pointer (pointer to pointer) of type char. The function 
+	sets the pointer pointed to by the second argument to the middle 
+	of the character string. A character string and a char pointer are 
+	created and the function is called using these arguments. After 
+	calling the strhalf function, the changed pointer is printed using 
+	printf(“%s”) - it prints only the second half of the original character string.
+
+4. The function takes a two-dimensional integer array that can have 
+	any number of rows but has four columns and prints it as a table 
+	using addressable arithmetic. The function also accepts the number of rows.
