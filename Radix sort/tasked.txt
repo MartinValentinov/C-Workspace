@@ -1,0 +1,91 @@
+You are asked to implement the Radix Sort algorithm, which is a variant of Bucket Sort. The main difference is that elements are not distributed into buckets based on their full value, but rather based on individual digits (or characters).
+
+Task Description:
+
+Sorting Mechanism:
+
+For integer data, distribution into buckets is done based on the first digit (or last digit, see below) of each number.
+
+If a bucket contains numbers with more than one digit, the process is repeated recursively on the next digit until all numbers in the buckets have only one digit.
+
+Digit Selection:
+
+You may choose either the first digit or the last digit of the number for bucket distribution.
+
+Explain your choice in a comment before the function.
+
+Function Specification:
+
+Implement the function:
+
+void radix_sort(int* arr, unsigned int count);
+
+
+The function must:
+
+Correctly sort values in the range 0 to 999.
+
+Call itself recursively for subarrays corresponding to each bucket.
+
+Print messages to the console for every step so that the process can be traced.
+
+Demonstration in main:
+
+Test the function with different types of arrays:
+
+Small and large arrays
+
+Empty arrays
+
+Already sorted arrays
+
+Randomized arrays
+
+Reverse-ordered arrays
+
+Arrays with duplicate values
+
+Advanced Requirement:
+
+Extend the function to correctly sort all positive and negative values of 4-byte integers (int).
+
+Restrictions:
+
+Do not use lists or other data structures.
+
+Only plain arrays are allowed.
+
+Example:
+Given the array:
+
+[5, 23, 45, 43, 10, 22, 55, 155, 125]
+
+
+Step 1 (first digit bucket):
+
+[005, 023, 045, 043, 010, 022, 055], [155, 125]
+
+
+Step 2 (second digit bucket):
+
+[[005], [010], [023, 022], [045, 043], [055]], [[125], [155]]
+
+
+Step 3 (third digit bucket):
+
+[[005], [010], [[022], [023]], [[043], [045]], [055]], [[125], [155]]
+
+
+Finally, merge all subarrays to get the sorted array.
+
+Submission Instructions:
+
+Submit as a source code archive only.
+
+No compiled programs or generated files.
+
+Archive name format: <number>_<first_name>_<last_name>.
+
+Code must compile with gcc under Ubuntu.
+
+Solutions not following these rules will be graded as 2.

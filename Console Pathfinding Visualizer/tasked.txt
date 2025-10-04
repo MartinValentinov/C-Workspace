@@ -1,0 +1,60 @@
+You are asked to implement a pathfinding visualizer in the console, similar to the one shown in class: Pathfinding Visualizer
+.
+
+Requirements:
+
+Grid Representation:
+
+Work with a 2D grid of characters:
+
+' ' (space) → empty cell (walkable)
+
+'#' → obstacle (cannot pass)
+
+'S' → start position
+
+'E' → end position
+
+Visualization:
+
+The program should update the console grid dynamically during execution.
+
+Use sleep from <unistd.h> to control the speed (Linux)
+
+Clear and redraw the grid to visualize progress
+
+Cells that are visited should be displayed as '.'
+
+Once a path is found, mark the path cells with 'X' (or another symbol of your choice)
+
+Algorithm Selection:
+
+When the program starts, allow the user to choose the algorithm to run:
+
+A*
+
+BFS
+
+One additional algorithm of your choice
+
+Optional Bonus – Weighted Cells:
+
+You can add weighted cells in the grid
+
+When a path goes through a weighted cell, mark it with a different symbol instead of '.' to show it has higher cost
+
+You may choose the symbol and weight value freely
+
+Implementation Notes:
+
+For Linux, use <unistd.h> and sleep(seconds)
+
+For Windows, you may use windows.h and Sleep(milliseconds) and convert before submission
+
+sleep uses seconds, so use fractional values (via usleep) for finer control if needed
+
+Demonstration:
+
+Show the visualized execution of your algorithms on sample grids
+
+Make sure visited cells and final paths are clearly distinguishable

@@ -1,0 +1,49 @@
+You are asked to implement a graph where vertices are labeled with strings instead of numeric indices. The graph will represent airline connections between cities, and each flight has a cost.
+
+Requirements:
+
+Graph Structure:
+
+Vertices represent cities, labeled with strings (e.g., "New York", "London").
+
+Edges represent direct flights between cities.
+
+Each flight (edge) has an associated price.
+
+Program Functionality:
+
+The program should read input specifying:
+
+Start city
+
+Destination city
+
+Maximum number of layovers
+
+Maximum total price
+
+The program should return all possible paths that satisfy:
+
+The path starts at the start city and ends at the destination city
+
+The total number of layovers does not exceed the given limit
+
+The total cost does not exceed the given maximum price
+
+The output should be sorted by total cost ascending
+
+If multiple paths have the same cost, the path with fewer layovers should come first
+
+Implementation Notes:
+
+You may use adjacency lists, adjacency maps, or any structure that allows labeling vertices with strings
+
+Paths should be computed using depth-first search (DFS) or a similar traversal method
+
+Store and sort the resulting paths according to the rules above
+
+Demonstration:
+
+Create a sample graph of cities with flights and prices
+
+Show the program returning all valid paths according to the given start/destination, max layovers, and max price

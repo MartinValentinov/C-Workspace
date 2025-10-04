@@ -1,0 +1,135 @@
+You are asked to implement a console-based banking application for performing banking operations, including user registration, login, account management, and transaction processing.
+
+Project Requirements:
+
+Team Work:
+
+Split the project so that each major feature is implemented by a different student.
+
+Each student will be evaluated individually based on their contribution and understanding of the code.
+
+It is recommended to upload the project to GitHub, with each student committing their own changes.
+
+Code Structure:
+
+Implement features as separate functions with appropriate arguments and return types.
+
+Avoid concentrating large amounts of code in main or in a few large functions.
+
+Do not use global variables; pass all data through function arguments and return values.
+
+Clean up dynamic resources (free allocated memory, close files when done).
+
+Use rand() for generating random numbers when needed.
+
+Data Structures:
+
+Implement the system database in two parts: memory structures and files.
+
+User:
+
+Fields: username, hashed password, unique identifier (generated upon registration).
+
+Account:
+
+Fields: account number (mix of letters and digits), current balance (can be negative), user ID of the owner.
+
+Transaction:
+
+Represents a banking operation that is added to a queue for later processing.
+
+Fields: operation code (string), transfer amount, source account number, destination account number.
+
+Menu Structure:
+
+On program start, display the main menu:
+
+Login
+
+Registration
+
+Exit
+
+After choosing an option and pressing Enter, the corresponding functionality executes.
+
+After completion, the program returns to the main menu (except for Exit).
+
+After successful login, display a user menu:
+
+Deposit
+
+Withdraw
+
+Transfer
+
+Process transactions
+
+Logout
+
+Functionalities:
+
+Registration:
+
+User enters username and password.
+
+Store username, hashed password, and unique ID in the user collection.
+
+Registration fails if the username already exists.
+
+The hash function should convert a string to a number in a way that is deterministic but irreversible.
+
+Login:
+
+User enters username and password.
+
+Login succeeds if the username and hashed password match a user in the collection.
+
+Upon success, show the user menu.
+
+Deposit:
+
+User enters a positive amount (up to 2 decimal places).
+
+Add the amount to their account balance.
+
+Display success or error messages if the input is invalid.
+
+Withdraw:
+
+User enters a positive amount (up to 2 decimal places).
+
+Deduct the amount from their account balance.
+
+Display success or error messages if the input is invalid or exceeds balance.
+
+Transfer:
+
+User enters the target account number and a positive amount (up to 2 decimal places).
+
+Create a transaction and add it to the transaction queue.
+
+Display errors for invalid amounts or non-existent accounts.
+
+Process Transactions:
+
+Sequentially process all transactions in the queue.
+
+For each transfer:
+
+Deduct the amount from the source account and add it to the destination account.
+
+If the source account lacks sufficient funds, display an error but continue processing the queue.
+
+Logout:
+
+Log the user out and clear any user-specific session data.
+
+Return to the main menu.
+
+Files and Persistence:
+
+At startup, read users, accounts, and transactions from respective files.
+
+If files do not exist, start with empty collections.
+
+After any modification, overwrite the corresponding file so the data is always up-to-date, even if the program is terminated unexpectedly.
